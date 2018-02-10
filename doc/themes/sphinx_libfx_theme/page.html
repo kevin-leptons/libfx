@@ -1,0 +1,53 @@
+<html>
+<head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="{{pathto('_static/css/main.css', 1)}}">
+        <title>{{title}}</title>
+</head>
+<body>
+        <div class="fx-container">
+                <nav class="fx-nav">
+                        <span class="fx-nav-btn-slot">
+                                <a href="{{pathto(master_doc)}}" title="{{docstitle}}" class="fx-nav-btn">
+                                        <span>ROOT</span>
+                                </a>
+                        </span>
+                        <span class="fx-nav-btn-slot">
+                                {% if parents %}
+                                <a href="{{parents[-1].link}}" title="{{parents[-1].title}}" class="fx-nav-btn">
+                                        <span>UP</span>
+                                </a>
+                                {% endif %}
+                        </span>
+                        <span class="fx-nav-btn-slot">
+                                {% if prev %}
+                                <a href="{{ prev.link|e }}" title="{{prev.title}}" class="fx-nav-btn">
+                                        <span>PREV</span>
+                                </a>                        
+                                {% endif %}
+                        </span>
+                        <span class="fx-nav-btn-slot">
+                                {% if next %}
+                                <a href="{{ next.link|e }}" title="{{next.title}}" class="fx-nav-btn">
+                                        <span>NEXT</span>
+                                </a>
+                                {% endif %}
+                        </span>        
+                </nav>
+                <div class="fx-body">
+                        <div class="fx-content">
+                                {{body}}  
+                        </div>
+                        <div class="fx-foot">
+                                <p>
+                                        {{project}} v{{version}}
+                                        &copy; Copyright {{copyright}}.
+                                        Created using Sphinx
+                                        {{sphinx_version}}
+                                </p>
+                                <p>Last updated {{last_updated}}</p>
+                        </div>
+                </div>
+        </div>
+</body>
+</html>

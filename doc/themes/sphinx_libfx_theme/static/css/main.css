@@ -1,0 +1,132 @@
+:root {
+        --fx-bg-color: white;           /*background color*/
+        --fx-fg-color: black;           /*forground color for main text*/
+        --fx-pm-color: darkgreen;       /*primary color for special text*/
+        --fx-cm-color: grey;            /*comment color*/
+        --fx-dg-color: red;             /*danger color for error text*/
+        --fx-wn-color: yellow;          /*warning clor for warn text*/
+}
+
+/*FONTS*/
+@font-face {
+        font-family: 'san-francisco-light';
+        src: url('../fonts/SanFranciscoText-Light.otf');
+}
+
+/*PARAGRAPH*/
+body {
+        font-family: 'san-francisco-light';
+        background: var(--bg-color);
+        margin: 0;
+}
+a {
+        text-decoration: none;
+}
+a,
+a:link,
+a:visited,
+a:hover {
+        color: var(--fx-fg-color);
+}
+a:hover {
+        outline: 2px dashed var(--fx-fg-color);
+}
+
+/*LAYOUT*/
+.fx-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+}
+.fx-nav {
+        border: solid 2px var(--fx-fg-color);
+        display: flex;
+}
+.fx-body {
+        overflow-x: auto;
+        flex: 1;
+}
+.fx-content {
+        margin: auto;
+        padding: 4px;
+}
+.fx-foot {
+        text-align: center;
+        padding: 8px;
+}
+@media screen and (min-width: 800px) {
+        .fx-content {
+                width: 800px;
+        }
+}
+
+/*TOP NAVIGATION BAR*/
+.fx-nav-btn-slot {
+        flex: 1;
+        text-align: center;
+        border-right: 2px solid var(--fx-fg-color);
+}
+.fx-nav-btn {        
+        display: block;
+}
+.fx-nav-btn:hover {
+        color: var(--fx-bg-color);
+        background: var(--fx-fg-color);        
+}
+.fx-nav-btn span {
+        padding: 2px;
+        display: block;
+        font-weight: bold;
+}
+.fx-nav-btn:hover span {
+        padding: 0;
+        border: 2px dashed var(--fx-bg-color);       
+        background: var(--fx-fg-color);
+}
+
+/*HIGLIGHT FOR CODE BLOCKS*/
+.highlight {
+        overflow-x: auto;        
+        padding: 4px;        
+}
+@media screen and (min-width: 800px) {
+        .highlight {
+                border: dashed 1px;
+        }
+}
+blockquote {
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+}
+.cpf,
+.cm,
+.c1 {
+        font-style: italic;
+        color: var(--fx-cm-color);
+}
+.nf {
+        font-weight: bold;
+}
+.docutils.literal:hover {
+        outline: 1px dashed var(--fx-fg-color);
+}
+
+/*HEADERLINK*/
+h1, h2, h3, h4, h5, h6 {
+        position: relative;
+}
+.headerlink {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 0px;
+}
+
+/*OTHERS*/
+::selection {
+    color: var(--fx-bg-color); 
+    background: var(--fx-fg-color);
+}

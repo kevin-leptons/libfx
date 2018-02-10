@@ -1,0 +1,5 @@
+#include <fx_error/core.h>
+
+FX_ERROR_DEF(FX_EINDEX);
+FX_ERROR_DEF(FX_EKEY);
+FX_ERROR_DEF(FX_EFULL);
