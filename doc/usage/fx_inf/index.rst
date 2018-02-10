@@ -10,7 +10,7 @@ concepts such as coding standard or error handling, C language lets
 programmers to decide that.  If you are a C programmer then you know what is
 that when you deal with error handling model, allocate and release resources.
 There are many ways to do with pros/cons but you do not know what should you
-choice. t is wasted time, stress and painful.
+choice. it is wasted time, stress and painful.
 
 This package provides solution to deal with freedom in C language. Package
 contains both specifications and APIs to do that and used as infrastructure
