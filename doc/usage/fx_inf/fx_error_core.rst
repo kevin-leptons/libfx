@@ -29,9 +29,10 @@ SYNOPSIS
 DESCRIBE
 --------
 
-This APIs is an implementation follow :ref:`fx-error-concept`. Parts of
-`libfx` must be compliant with this APIs. Code depends on ``libfx`` should be
-compliant with this APIs to handle errors unified. This implementation also
+This APIs is an implementation of :ref:`fx-error-concept` called ``fx_error``.
+``fx_error`` use for all of parts of ``libfx``. New code aim to part of
+``libfx`` must be ``fx_error`` compliant. Code depends on ``libfx`` should be
+``fx_error`` compliant to handle errors unified. This implementation also
 specify three more rules for compative with C language:
 
 **Comfort with C standard library**. That library is specifics in `ISO-IEC

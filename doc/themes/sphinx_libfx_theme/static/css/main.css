@@ -113,20 +113,24 @@ blockquote {
 }
 
 /*HEADERLINK*/
-h1, h2, h3, h4, h5, h6 {
-        position: relative;
+h1:hover .headerlink::after,
+h2:hover .headerlink::after,
+h3:hover .headerlink::after,
+h4:hover .headerlink::after,
+h5:hover .headerlink::after,
+h6:hover .headerlink::after {
+        visibility: visible;
 }
 .headerlink {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        font-size: 0px;
+        visibility: hidden;
+}
+.headerlink::after {
+        content: '\25B2 ';
+        outline: 1px dashed var(--fx-fg-color);
 }
 
 /*OTHERS*/
 ::selection {
-    color: var(--fx-bg-color); 
-    background: var(--fx-fg-color);
+        color: var(--fx-bg-color); 
+        background: var(--fx-fg-color);
 }
