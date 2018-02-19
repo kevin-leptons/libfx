@@ -1,3 +1,4 @@
+all: src-build
 config:
 	sudo apt-get install sphinx-common cmake
 doc-build:
