@@ -8,13 +8,13 @@ knowledge about concepts, also as guide to use implementations.
 Implementations are write by programming language and to be use as APIs to
 write programs, for specific programming language is C.
 
-Release under libfx license, **libfx** describes concepts and give
-implementations under the **libfx** name to help programmers do good work
-together. Unlike in the case use other packages with different styles,
-**libfx** is unique rules, it saves resources such as time, money and working.
-Programmers can be student, researcher, developer or any one, they can use or
-contribute to **libfx** if they have base knowledge about computer
-programming.
+**libfx** describes concepts and give implementations under the **libfx** name
+to help programmers do thier job and do together. For example, **libfx**
+provides vector, hash table, thread pool or TCP handling model. Unlike in the
+case use other packages with different styles, **libfx** is unique clauses, it
+saves resources such as time, money and working.  Programmers can be student,
+researcher, developer or any one, they can use or contribute to **libfx** if
+they have base knowledge about computer programming.
 
 Packages aims to both hosted and freestanding environments.If package runs on
 hosted, it must be independent between hosts, called cross platform. So some
