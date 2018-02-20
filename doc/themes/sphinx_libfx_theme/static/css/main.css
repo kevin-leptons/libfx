@@ -13,6 +13,11 @@
         src: url('../fonts/SanFranciscoText-Light.otf');
 }
 
+/*TOC TREE*/
+ul li {
+        list-style: none;
+}
+
 /*PARAGRAPH*/
 body {
         font-family: 'san-francisco-light';
@@ -54,6 +59,7 @@ a:hover {
 .fx-foot {
         text-align: center;
         padding: 8px;
+        border-top: 1px dashed var(--fx-fg-color);
 }
 @media screen and (min-width: 800px) {
         .fx-content {

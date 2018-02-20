@@ -3,13 +3,21 @@
 fx_error_concept
 ================
 
-NAME
-----
+TITLE
+-----
 
 fx_error_concept - fx error concept
 
-SYNOPSIS
---------
+SCOPE
+-----
+
+This section specify error and error handling. That specifications apply for
+errors in general programming, not only for specific programming language. In
+specific programming language, it must implement follow specifications.
+Examples are write in pseudo code.
+
+CONTEXT
+-------
 
 #. ``TASK`` is object can be execute.
 #. ``WORKER`` is object which execute tasks.
@@ -32,6 +40,10 @@ SYNOPSIS
 #. ``SOLVE_ERROR`` mean try other ``TASK`` to get target result.
 #. ``ERROR_HANDLING`` is: ``DISCOVER_ERROR``, ``DEFINE_ERROR``,
    ``DETECT_ERROR``, ``RAISE_ERROR``, ``CATCH_ERROR`` and ``SOLVE_ERROR``.
+
+CLAUSES
+-------
+
 #. **MUST**: Provide mechanism to ``DEFINE_ERROR``, ``DETECT_ERROR``,
    ``RAISE_ERROR``, ``CATCH_ERROR`` and ``SOLVE_ERROR``.
 #. **MUST**: Provide ``NONE_ERROR``.
@@ -46,13 +58,6 @@ SYNOPSIS
 #. **MUST NOT**: Do ``ERROR_HANDLING`` with ``INTERNAL_ERROR``.
 #. **MUST NOT**: Define ``ERROR_IDENTITY`` duplication.
 
-DESCRIPTION
------------
-
-This section specify error and error handling. That specifications apply for
-errors in general programming, not only for specific programming language. In
-specific programming language, it must implement follow specifications.
-Examples are write in pseudo code.
 
 EXAMPLE 01
 ----------
